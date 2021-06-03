@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+export SOURCE_FILES="src"
+
+set -x
+
+autoflake --in-place --recursive $SOURCE_FILES
+isort --project=cmarkcffi $SOURCE_FILES
+black --target-version=py38 $SOURCE_FILES

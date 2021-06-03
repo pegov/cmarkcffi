@@ -1,0 +1,5 @@
+recursive-include src/cmarkcffi *.py *.h
+recursive-include generated *.h
+
+recursive-include third_party/cmark/src *.c *.h *.inc
+include third_party/cmark/COPYING

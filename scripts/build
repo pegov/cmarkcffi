@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+set -x
+
+python setup.py sdist bdist_wheel
